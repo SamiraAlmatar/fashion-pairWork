@@ -1,0 +1,94 @@
+body {
+    margin: 5px 50px;
+    width: 100%;
+    background-color: #f4faf6;
+    height: auto;
+    font-family: "Lato",serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #292728;
+    background-image: url("../res/header-bg.png");
+    width: 90%;
+    margin-right: 150px;
+    
+}
+/* .logo{
+    width: 100%;
+    height:100%; 
+} */
+.logo img{
+    height: 100%;
+    width: 100%;
+    padding-top : 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+.top-right-bar{
+    display:  flex;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-left: 14%;
+    
+}
+.top-right-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.top-right-bar a:hover, .top-right-bar a:focus{
+    opacity: 0.7;
+    background-color: #292728;
+}
+.search{
+    padding-top: 10%;
+    padding-left: 20%;
+    
+}
+.search input{
+    font-size: 2em;
+    width: 80%;
+    
+
+}
+.search button{
+    font-size: 2em;
+}
+a:hover, a:focus, a#home{
+    background-color: #1eb8c0;
+    color: #ffffff;
+    text-align: center;
+    padding-right: 10px;
+}
+nav{
+    margin-top: 1%;
+    font-size: 1.4em
+}
+nav a{
+    margin-left: 2%;
+    padding-left: 1%;
+    text-decoration: none;
+    color: #333333;
+}
+
+
+@media only screen and (min-width: 569px) and (max-width: 640px) {
+    body{
+        font-size: 0.5em;
+    }
+    header {
+        width: 50%;
+        font-size: 0.5em;
+
+    }
+    .top-right-bar{
+        width: 50%;
+
+    }
+}
