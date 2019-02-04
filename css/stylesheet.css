@@ -11,8 +11,9 @@ body {
     padding-right: 15px;
 }
 header{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    align-items: center;
+    /* grid-template-columns: 50% 50%; */
     background-color: #292728;
     background-image: url("../res/header-bg.png");
     width: 90%;
@@ -26,69 +27,86 @@ header{
 .logo img{
     height: 100%;
     width: 100%;
-    padding-top : 20px;
+    align-self: center;
+     padding-top : 20px;
     padding-left: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
+}
+.bars{
+    align-self: flex-start;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+
 }
 .top-right-bar{
+   
     display:  flex;
+    height: 100%;
     color: #ffffff;
     padding-top: 15px;
-    padding-left: 14%;
+    padding-right: 15px;
     
 }
 .top-right-bar a{
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.1em;
     padding-left: 5px;
 }
 .top-right-bar a:hover, .top-right-bar a:focus{
     opacity: 0.7;
     background-color: #292728;
 }
-.search{
-    padding-top: 10%;
-    padding-left: 20%;
-    
-}
+
 .search input{
-    font-size: 2em;
-    width: 80%;
+    font-size: 1.7em;
+   
     
 
 }
 .search button{
-    font-size: 2em;
+    font-size: 1.7em;
 }
 a:hover, a:focus, a#home{
     background-color: #1eb8c0;
     color: #ffffff;
-    text-align: center;
-    padding-right: 10px;
+    /* text-align: center; */
+    /* padding-right: 10px; */
 }
 nav{
-    margin-top: 1%;
-    font-size: 1.4em
+    margin-top: 2%;
+    font-size: 1.4em;
+    
 }
 nav a{
     margin-left: 2%;
     padding-left: 1%;
     text-decoration: none;
     color: #333333;
+    padding: 10px;
 }
 
 
-@media only screen and (min-width: 569px) and (max-width: 640px) {
+@media only screen and (min-width: 569px) and (max-width: 850px) {
     body{
-        font-size: 0.5em;
+       font-size: 0.5em;
     }
     header {
-        width: 50%;
-        font-size: 0.5em;
-
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
-    .top-right-bar{
-        width: 50%;
-
+    .bars {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
+   
+
 }
