@@ -1,0 +1,114 @@
+footer{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-right: 150px;
+    background-color: #292728;
+    background-image: url("../res/header-bg.png");
+}
+.footer-social-bar{
+    display: flex;
+    width: 25%;
+    color: #ffffff;
+    justify-content: flex-start;
+    
+}
+.footer-social-bar a{
+    font-size: 1.1em;
+    width: 5%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 3%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #333333;
+    background-color:#ffffff; 
+}
+.footer-social-bar a:hover, .footer-social-bar a:focus{
+    opacity: 0.7;
+}
+.widgets-header{
+    align-self: center;
+    color: #00b8c1;
+}
+.widgets{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 25px;
+}
+.widget{
+    /*  */
+    width: 50%;
+}
+.widget input{
+    /*  */
+    width: 70%;
+}
+.widget ul, .widget li{
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.widget a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.pay-logo-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: #00b8c1;
+    margin: 40px 70px;
+    height: 150px;
+}
+.payment-banner *{
+
+    padding-right: 50px;
+    
+}
+.footer-logo{
+    width: auto;
+    height: 100%;
+}
+.payment-method{
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+
+    /*-----------footer-----------*/
+    .footer-social-bar{
+        width: 100%;
+        justify-content: center;
+    }
+    .widgets-header, .widgets{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .pay-logo-bar{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        font-size: 0.7em;
+        margin-top: 0%;
+    }
+    .payment-banner{
+        margin-top: 0px;
+       margin-left: 30%;
+       margin-bottom: 10%;
+    }
+    .payment-method{
+        width: 50%;
+    }
+    .footer-logo{
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
