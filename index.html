@@ -9,15 +9,11 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--load html parts from other files-->
     </head>
-    <body>
+   <body>
         <!-- <img src="res/header-bg.png" > -->
         <header></header>
         <nav></nav>
-        <div class="special-bar">
-            <a href="./index.html">Shop Christmas Gifts</a>
-            <a href="#" target="_blank">Party Season Glamour</a>
-            <a href="./index.html" target="_blank">10% OFF Selected Scarves</a>
-        </div>
+        <wrapper ></wrapper>
         <div class="products-list"></div>
         <footer></footer>
         <script>
@@ -25,9 +21,11 @@
                 $('header').load("header.html");
                 $('nav').load('navbar.html');
                 $('.products-list').load('productsList.html');
+                $('wrapper').load('wrapper.html');
                 $('footer').load('footer.html');
                 
                 // $('.search').css('height',$('.logo img').height);
+                
             });
         </script>
     </body>
